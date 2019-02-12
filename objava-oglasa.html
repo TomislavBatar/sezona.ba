@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="bs">
+   <head>
+      <!-- Meta tags -->
+      <meta charset="utf-8">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="google-site-verification" content="FlbPWCPlxTaK76vXFbkHo4GqIp6guD3y5NH8Kfvw-m0" />
+      <link rel="shortcut icon" type="image/x-icon" href="img/sezona-logo-mini.png" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+      <link rel="stylesheet" type="text/css" href="css/collapsing-none.css">
+      <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+      <link rel="stylesheet" type="text/css" href="css/under-nav-scroll.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <title>Sezona.ba - Isplati se</title>
+   </head>
+   <body>
+
+      <!-- Modal  PrijaviProfil samo Profil strana -->
+
+      <div class="modal" id="PrijaviProfil" tabindex="-1" role="dialog" aria-labelledby="PrijaviProfil" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Prijavi profil</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     
+                    
+                     <div class="form-group">
+                        <label>Ukratko opiši problem ovog profila</label>
+                        <textarea class="form-control" rows="3" placeholder="Problem ovog profila je..."></textarea>
+                     </div>
+
+                     <div class="form-group">
+                        <label>Slika kao prilog</label>
+                        <input type="file" accept="image/*" class="form-control-file">
+                     </div>
+
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                  <button type="button" class="btn btn-primary">Prijavi</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+    <!-- Modal prijava na oglas -->
+                     <div class="modal" id="PrijavaNaOglas1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Prijava na oglas</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <form>
+                                    <div class="form-group">
+                                       <label for="recipient-name" class="col-form-label">Ime i prezime</label>
+                                       <input type="text" class="form-control" id="recipient-name" placeholder="Unesi svoje puno ime i prezime">
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="message-text" class="col-form-label">Poruka za korisnika:</label>
+                                       <textarea class="form-control" placeholder="Napiši kratku poruku korisniku..." id="message-text"></textarea>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                                 <button type="button" class="btn btn-primary">Pošalji prijavu</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+      <!-- Modal  Prijavi problem Nav-dropdown -->
+      <div class="modal" id="PrijaviProblem" tabindex="-1" role="dialog" aria-labelledby="PrijaviProblem" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Prijavi problem</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     
+                    
+                     <div class="form-group">
+                        <label>Ukratko opiši šta se dogodilo</label>
+                        <textarea class="form-control" rows="3" placeholder="Problem je primjećen kada..."></textarea>
+                     </div>
+
+                     <div class="form-group">
+                        <label>Slika kao prilog</label>
+                        <input type="file" accept="image/*" class="form-control-file">
+                     </div>
+
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                  <button type="button" class="btn btn-primary">Pošalji</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      
+
+
+
+
+
+      <!-- Modal  Uredi Profil Nav-dropdown -->
+      <div class="modal" id="UrediProfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Uredi profil</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     <div class="form-group">
+                        <label>Promjeni profilnu sliku</label>
+                        <input type="file" accept="image/*" class="form-control-file">
+                     </div>
+                     <div class="form-group">
+                        <label for="formGroupExampleInput">Promjeni broj telefona</label>
+                        <input type="number" class="form-control" placeholder="Unesi novi broj telefona">
+                     </div>
+                     <div class="form-group">
+                        <label for="formGroupExampleInput2">Promjeni lokaciju</label>
+                        <input type="text" class="form-control" placeholder="Unesi novu lokaciju">
+                     </div>
+                     <div class="form-group">
+                        <label for="formGroupExampleInput2">Promjeni dodatne informacije o profilu</label>
+                        <textarea class="form-control" rows="3" placeholder="Unesi nove dodatne informacije o profilu"></textarea>
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                  <button type="button" class="btn btn-primary">Sačuvaj promjene</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal  Promjeni lozinku-->
+      <div class="modal" id="PromjeniLozinku" tabindex="-1" role="dialog" aria-labelledby="PromjeniLozinku" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="PromjeniLozinku">Promjeni lozinku</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     <div class="form-group">
+                        <label>Trenutna lozinka</label>
+                        <input type="password" class="form-control" placeholder="Unesi trenutnu lozinku">
+                     </div>
+                     <div class="form-group">
+                        <label for="formGroupExampleInput2">Nova lozinka</label>
+                        <input type="password" class="form-control" placeholder="Unesi novu lozinku">
+                     </div>
+                     <div class="form-group">
+                        <label for="formGroupExampleInput2">Nova lozinka, još jednom</label>
+                        <input type="password" class="form-control" placeholder="Ponovo unesi novu lozinku">
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                  <button type="button" class="btn btn-primary">Promjeni lozinku</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal Odjavi me -->
+      <div class="modal" id="OdjaviMe" tabindex="-1" role="dialog" aria-labelledby="OdjaviMe" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="OdjaviMe">Sigurno odlaziš?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  Odaberi "Odjavi me" ispod ako si spreman da završiš svoju trenutnu sesiju.
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                  <button type="button" class="btn btn-danger">Odjavi me</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+                 <!-- Upustvo modal -->
+<div class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="UpiustvoZaObjavu" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h4" id="myLargeModalLabel">Upustvo za objavu oglasa</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <h5>Naslov oglasa</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+         <h5>Opis oglasa (tekst ispod slike)</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+
+         <h5>Kategorija</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+
+         <h5>Šta je predložena cijena?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+        <h5>Rok oglasa</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+
+        <h5>Broj radnika</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+        <h5>Predviđeno vrijeme</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+        <h5>Razlika između hitnog i običnog oglasa...</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+     <!-- Navigation -->
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+         <a class="navbar-brand" href="index.html">
+         <img src="img/sezona-logo-mini.png" width="30" height="30" class="d-inline-block align-top" alt="Sezona.ba logo">
+         <b>Sezona.ba</b>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Početna <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="hitni-oglasi.html">Hitni oglasi</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="napredna-pretraga.html">Napredna pretraga</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="o-sezoni.html">O sezona.ba</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="profil.html">Moj profil</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Objavi oglas
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="objava-oglasa.html">Objavi oglas</a>
+                     <a class="dropdown-item" href="" data-toggle="modal" data-target=".bd-example-modal-lg">Upustvo za objavu?</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle pr-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Podešavanje
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#UrediProfil">Uredi profil</a>
+                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#PromjeniLozinku">Promjeni lozinku</a>
+                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#PrijaviProblem">Prijavi problem</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#OdjaviMe">Odjavi me</a>
+                  </div>
+               </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0 d-block d-sm-none">
+             <input class="form-control mr-sm-2" type="text" placeholder="Unesi pretragu" aria-label="Search">
+             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pretraži</button>
+          </form>
+         </div>
+      </div>
+   </nav>
+   <div class="nav-scroller bg-white" style="border-bottom:2px solid #f8f8f8">
+      <div class="container">
+         <nav class="nav nav-underline"> 
+            <a class="nav-link active pl-0" href="profil.html">Moj profil</a>
+            <a class="nav-link" href="obavjestenja.html">
+            Obavještenja
+            <span class="badge badge-pill badge-primary text-white align-text-bottom">3</span>
+            </a>
+            <a class="nav-link" href="sacuvani-oglasi.html">Sačuvani oglasi
+            <span class="badge badge-pill badge-primary align-text-bottom">12</span>
+            </a>
+            <a class="nav-link" href="objavljeni-oglasi.html">Objavljeni oglasi
+            <span class="badge badge-pill badge-primary align-text-bottom">4</span>
+            </a>
+            <a class="nav-link" href="prijava-na-oglase.html">Prijave na oglase
+            <span class="badge badge-pill badge-primary align-text-bottom">32</span>
+            </a>
+         </nav>
+      </div>
+   </div>
+   <!-- Kraj Navgacije -->
+
+      <!-- Page content -->
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-7 mt-4">
+               <div class="card">
+                  <h5 class="card-header">Objava oglasa</h5>
+                  <div class="card-body">
+                     <form class="needs-validation" novalidate="">
+                        <div class="mb-3">
+                           <label for="">Naslov oglasa</label>
+                           <input type="text" id="" class="form-control" aria-describedby="" required="" maxlength="150">
+                           <small id="" class="form-text text-muted">
+                           Naslov oglasa mora biti manji od 150 znakova
+                           </small>
+                           <div class="invalid-feedback">
+                              Upiši najmanje dvije riječi koje najbolje opisuju tvoj oglas
+                           </div>
+                        </div>
+                        <div class="mb-3">
+                           <label for="">Opis oglasa <small>(tekst ispod slike)</small></label>
+                           <textarea class="form-control" id="" rows="3" aria-describedby="" required="" maxlength="250"></textarea>
+                           <small id="" class="form-text text-muted">
+                           Maksimalno 250 znakova
+                           </small>
+                           <div class="invalid-feedback">
+                              Upiši najmanje par rečenica koje opisuju tvoj oglas
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-8 mb-3">
+                              <label for="country">Kategorija</label>
+                              <select class="custom-select d-block w-100" id="country" required="">
+                                 <option value="">Izaberi kategoriju</option>
+                                 <option>Košenje trave</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                 Moraš izabrati kategoriju
+                              </div>
+                           </div>
+                           <div class="col-md-4 mb-3">
+                              <label for="zip">Predložena cijena</label>
+                              <input type="text" class="form-control" id="zip" placeholder="" value="35KM" readonly="">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-8 mb-3">
+                              <label for="country">Lokacija</label>
+                              <select class="custom-select d-block w-100" id="country" required="">
+                                 <option value="">Izaberi lokaciju</option>
+                                 <option>Banja Luka</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                 Moraš izabrati lokaciju
+                              </div>
+                           </div>
+                           <div class="col-md-4 mb-3">
+                              <label for="country">Rok oglasa</label>
+                              <input type="date" class="form-control" id="zip" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                 Moraš upisati rok oglasa
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-8 mb-3">
+                              <label for="country">Broj radnika</label>
+                              <select class="custom-select d-block w-100" id="country" required="">
+                                 <option value="">Izaberi broj radnika</option>
+                                 <option>1 radnik</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                 Moraš izabrati broj radnika
+                              </div>
+                           </div>
+                           <div class="col-md-4 mb-3">
+                              <label for="country">Predviđeno vrijeme</label>
+                              <select class="custom-select d-block w-100" id="country" required="">
+                                 <option value="">Izaberi broj dana</option>
+                                 <option>1 dan</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                 Moraš izabrati broj dana
+                              </div>
+                           </div>
+                        </div>
+                        <h5 class="mb-3">Vrsta oglasa</h5>
+                        <div class="d-block my-3">
+                           <div class="custom-control custom-radio">
+                              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                              <label class="custom-control-label" for="credit">Obični oglas</label>
+                           </div>
+                           <div class="custom-control custom-radio">
+                              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                              <label class="custom-control-label" for="debit">Hitni oglas</label>
+                           </div>
+                        </div>
+                        <hr class="mb-4" >
+                        <button class="btn btn-primary" type="submit">Postavi oglas</button>
+                     </form>
+                  </div>
+               </div>
+               <span class="d-none d-sm-block"><br><br></span>
+            </div>
+            <div class="col-sm-5 mt-4 mb-4">
+               <div class="card mb-4">
+                  <img class="card-img-top" src="img/tum.svg" alt="Card image cap">
+                  <div class="card-body">
+                     <h2 class="card-title">Naslov oglasa</h2>
+                     <p class="card-text">Opis oglasa</p>
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Detalji
+                        </button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#"><b>Lokacija</b> #</a>
+                           <a class="dropdown-item" href="#"><b>Rok oglasa</b> #</a>
+                           <a class="dropdown-item" href="#"><b>Potreban broj radnika</b> #</a>
+                           <a class="dropdown-item" href="#"><b>Predviđeno vrijeme</b>#</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="#"><b>Isplata (po danu)</b>#</a>
+                        </div>
+                     </div>
+                     <button type="button" class="btn btn-primary" disabled>
+                     Prijavi se na oglas→
+                     </button>
+                     <!-- Modal -->
+                     <div class="modal" id="PrijavaNaOglas1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Prijava na oglas</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">×</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <form>
+                                    <div class="form-group">
+                                       <label for="recipient-name" class="col-form-label">Ime i prezime</label>
+                                       <input type="text" class="form-control" id="recipient-name" placeholder="Unesi svoje puno ime i prezime">
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="message-text" class="col-form-label">Poruka za korisnika:</label>
+                                       <textarea class="form-control" placeholder="Napiši kratku poruku korisniku..." id="message-text"></textarea>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                                 <button type="button" class="btn btn-primary">Pošalji prijavu</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <small class="text-muted">Postavljeno upravo sada sa profila
+                     <a href="#">Tomislav Batar</a></small>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="py-5 bg-light d-none d-sm-block">
+         <div class="container">
+            <p class="m-0 text-center text-body">Copyright &copy; Sezona.ba 2018</p>
+         </div>
+         <!-- /.container -->
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script type="text/javascript" src="js/jQuery-v3.3.1.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap-validation.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      
+   </body>
+</html>
